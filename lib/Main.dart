@@ -1,4 +1,11 @@
-import 'package:studiogenesis/screens/ExportScreens.dart';
+import 'package:flutter/material.dart';
+
+import 'package:studiogenesis/screens/LogIn.dart';
+import 'package:studiogenesis/screens/Home.dart';
+import 'package:studiogenesis/screens/List.dart';
+import 'package:studiogenesis/screens/New.dart';
+import 'package:studiogenesis/screens/Settings.dart';
+
 
 void main() => runApp(MaterialApp(
   initialRoute: '/',

@@ -24,8 +24,18 @@ class _ListState extends State<List> {
         padding: const EdgeInsets.all(10),
         child: Column(
           children: [
-            const Text('Elements:')
-          ],          
+            ElevatedButton.icon(
+              style: ElevatedButton.styleFrom(
+                  padding: EdgeInsets.all(15),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15)))
+              ),
+              onPressed: () {
+                Navigator.pushNamed(context, 'backToHome');
+              },
+              icon: const Icon(Icons.arrow_back),
+              label: const Text('back', style: TextStyle(fontSize: 30)),
+            ),
+          ],
           
         ),
 

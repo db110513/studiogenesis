@@ -107,16 +107,34 @@ class _NewState extends State<New> {
               ),
             ),
             const SizedBox(height: 30),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(15),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15)))
-              ),
-              onPressed: () {
-                
-              },
-              child: const Text('CREATE', style: TextStyle(fontSize: 30)),
-            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton.icon(
+                  style: ElevatedButton.styleFrom(
+                      padding: EdgeInsets.all(15),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15)))
+                  ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, 'backToHome');
+                  },
+                  icon: const Icon(Icons.arrow_back),
+                  label: const Text('BACK', style: TextStyle(fontSize: 30)),
+                ),
+                const SizedBox(width: 20),
+                ElevatedButton.icon(
+                  style: ElevatedButton.styleFrom(
+                      padding: EdgeInsets.all(15),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15)))
+                  ),
+                  onPressed: () {
+
+                  },
+                  icon: const Icon(Icons.add),
+                  label: const Text('CREATE', style: TextStyle(fontSize: 30)),
+                ),
+              ],
+            )
           ],
         ),
 
