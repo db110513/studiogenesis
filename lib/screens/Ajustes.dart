@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class Settings extends StatefulWidget {
-  const Settings({Key? key}) : super(key: key);
+class Ajustes extends StatefulWidget {
+  const Ajustes({Key? key}) : super(key: key);
 
-  State<Settings> createState() => _SettingsState();
+  State<Ajustes> createState() => _AjustesState();
 }
 
-class _SettingsState extends State<Settings> {
+class _AjustesState extends State<Ajustes> {
 
   Widget build(BuildContext context) => MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -16,7 +16,7 @@ class _SettingsState extends State<Settings> {
 
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('Settings', style: TextStyle(fontSize: 40)),
+        title: const Text('Ajustes', style: TextStyle(fontSize: 40)),
         backgroundColor: Colors.blue[900],
       ),
 

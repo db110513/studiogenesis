@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class New extends StatefulWidget {
-  const New({Key? key}) : super(key: key);
+class Crear extends StatefulWidget {
+  const Crear({Key? key}) : super(key: key);
 
-  State<New> createState() => _NewState();
+  State<Crear> createState() => _CrearState();
 }
 
-class _NewState extends State<New> {
+class _CrearState extends State<Crear> {
 
   Widget build(BuildContext context) => MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -16,7 +16,7 @@ class _NewState extends State<New> {
 
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('New', style: TextStyle(fontSize: 40)),
+        title: const Text('Crear', style: TextStyle(fontSize: 40)),
         backgroundColor: Colors.blue[900],
       ),
 
@@ -36,7 +36,7 @@ class _NewState extends State<New> {
                   icon: const Icon(Icons.person),
                   hintText: 'Inserta tu nombre',
                   hintStyle: TextStyle(fontSize: 20),
-                  labelText: 'Name',
+                  labelText: 'Nombre',
                 ),
               ),
             ),
@@ -46,10 +46,10 @@ class _NewState extends State<New> {
               child: TextField(
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(borderSide: BorderSide(width: 5)),
-                  icon: const Icon(Icons.password),
-                  hintText: 'Inserta tu contraseña',
+                  icon: const Icon(Icons.description_outlined),
+                  hintText: 'Inserta tu descripción',
                   hintStyle: TextStyle(fontSize: 20),
-                  labelText: 'Contaseña',
+                  labelText: 'Descripción',
                 ),
               ),
             ),
@@ -59,10 +59,10 @@ class _NewState extends State<New> {
               child: TextField(
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(borderSide: BorderSide(width: 5)),
-                  icon: const Icon(Icons.phone),
-                  hintText: 'Inserta tu teléfono',
+                  icon: const Icon(Icons.calendar_month),
+                  hintText: 'Inserta la fecha del evento',
                   hintStyle: TextStyle(fontSize: 20),
-                  labelText: 'Teléfono',
+                  labelText: 'Fecha evento',
                 ),
               ),
             ),
@@ -73,10 +73,10 @@ class _NewState extends State<New> {
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(borderSide: BorderSide(width: 5)),
 
-                  icon: const Icon(Icons.calendar_today),
-                  hintText: 'Inserta tu fecha de nacimiento',
+                  icon: const Icon(Icons.camera_alt),
+                  hintText: 'Inserta tu foto',
                   hintStyle: TextStyle(fontSize: 20),
-                  labelText: 'Nacimiento',
+                  labelText: 'Foto',
                 ),
               ),
             ),
@@ -86,23 +86,10 @@ class _NewState extends State<New> {
               child: TextField(
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(borderSide: BorderSide(width: 5)),
-                  icon: const Icon(Icons.map),
-                  hintText: 'Inserta tu dirección',
+                  icon: const Icon(Icons.euro),
+                  hintText: 'Inserta el precio',
                   hintStyle: TextStyle(fontSize: 20),
-                  labelText: 'Dirección',
-                ),
-              ),
-            ),
-            const SizedBox(height: 15),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(0, 0, 8, 0),
-              child: TextField(
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(borderSide: BorderSide(width: 5)),
-                  icon: const Icon(Icons.credit_card),
-                  hintText: 'Inserta tu número de cuenta bancária',
-                  hintStyle: TextStyle(fontSize: 20),
-                  labelText: 'Cuenta bancária',
+                  labelText: 'Precio',
                 ),
               ),
             ),
@@ -131,7 +118,7 @@ class _NewState extends State<New> {
 
                   },
                   icon: const Icon(Icons.add),
-                  label: const Text('CREATE', style: TextStyle(fontSize: 30)),
+                  label: const Text('CREAR', style: TextStyle(fontSize: 30)),
                 ),
               ],
             )

@@ -12,7 +12,6 @@ class App extends StatelessWidget {
 
 }
 
-
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -40,7 +39,7 @@ class Home extends StatelessWidget {
               Navigator.pushNamed(context, 'listPressed');
             },
             icon: const Icon(Icons.list),
-            label: const Text('LIST', style: TextStyle(fontSize: 30)),
+            label: const Text('LISTADO', style: TextStyle(fontSize: 30)),
           ),
           const SizedBox(height: 20),
           ElevatedButton.icon(
@@ -52,7 +51,7 @@ class Home extends StatelessWidget {
               Navigator.pushNamed(context, 'newPressed');
             },
             icon: const Icon(Icons.add),
-            label: const Text('NEW', style: TextStyle(fontSize: 30)),
+            label: const Text('CREAR', style: TextStyle(fontSize: 30)),
           ),
           const SizedBox(height: 20),
           ElevatedButton.icon(
@@ -64,7 +63,7 @@ class Home extends StatelessWidget {
               Navigator.pushNamed(context, 'settingsPressed');
             },
             icon: const Icon(Icons.settings),
-            label: const Text('SETTINGS', style: TextStyle(fontSize: 30)),
+            label: const Text('AJUSTES', style: TextStyle(fontSize: 30)),
           ),
           const SizedBox(height: 20),
           ElevatedButton.icon(

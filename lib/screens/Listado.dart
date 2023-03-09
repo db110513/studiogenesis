@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class List extends StatefulWidget {
-  const List({Key? key}) : super(key: key);
+class Listado extends StatefulWidget {
+  const Listado({Key? key}) : super(key: key);
 
-  State<List> createState() => _ListState();
+  State<Listado> createState() => _ListadoState();
 }
 
-class _ListState extends State<List> {
+class _ListadoState extends State<Listado> {
 
   Widget build(BuildContext context) => MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -16,7 +16,7 @@ class _ListState extends State<List> {
 
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('List', style: TextStyle(fontSize: 40)),
+        title: const Text('Listado', style: TextStyle(fontSize: 40)),
         backgroundColor: Colors.blue[900],
       ),
 
