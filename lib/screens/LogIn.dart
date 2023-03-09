@@ -10,7 +10,6 @@ class _LogInState extends State<LogIn> {
 
   TextEditingController userName = TextEditingController();
   TextEditingController password = TextEditingController();
-  String _message = '';
 
 
   Widget build(BuildContext context) => MaterialApp(
@@ -71,7 +70,7 @@ class _LogInState extends State<LogIn> {
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15)))
             ),
             onPressed: () {
-
+              Navigator.pushNamed(context, 'loginPressed');
             },
             child: const Text('LOG IN', style: TextStyle(fontSize: 30)),
           ),
