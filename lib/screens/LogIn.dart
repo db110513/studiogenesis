@@ -66,7 +66,7 @@ class _LogInState extends State<LogIn> {
           const SizedBox(height: 30),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              padding: EdgeInsets.all(20),
+              padding: EdgeInsets.all(15),
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15)))
             ),
             onPressed: () {
@@ -74,9 +74,6 @@ class _LogInState extends State<LogIn> {
             },
             child: const Text('LOG IN', style: TextStyle(fontSize: 30)),
           ),
-
-
-
 
           ],
         ),

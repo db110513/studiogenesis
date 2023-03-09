@@ -1,5 +1,18 @@
 import 'package:flutter/material.dart';
 
+class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
+
+  Widget build(BuildContext context) => MaterialApp(
+    debugShowCheckedModeBanner: false,
+
+    home: Home(),
+
+  );
+
+}
+
+
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -20,7 +33,7 @@ class Home extends StatelessWidget {
         children: [
           ElevatedButton.icon(
             style: ElevatedButton.styleFrom(
-              padding: EdgeInsets.all(20),
+              padding: EdgeInsets.all(15),
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15)))
             ),
             onPressed: () {
@@ -32,7 +45,7 @@ class Home extends StatelessWidget {
           const SizedBox(height: 20),
           ElevatedButton.icon(
             style: ElevatedButton.styleFrom(
-              padding: EdgeInsets.all(20),
+              padding: EdgeInsets.all(15),
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15)))
             ),
             onPressed: () {
@@ -44,7 +57,7 @@ class Home extends StatelessWidget {
           const SizedBox(height: 20),
           ElevatedButton.icon(
             style: ElevatedButton.styleFrom(
-              padding: EdgeInsets.all(20),
+              padding: EdgeInsets.all(15),
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15)))
             ),
             onPressed: () {
@@ -56,7 +69,7 @@ class Home extends StatelessWidget {
           const SizedBox(height: 20),
           ElevatedButton.icon(
             style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(20),
+                padding: EdgeInsets.all(15),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15)))
             ),
             onPressed: () {

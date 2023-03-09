@@ -1,9 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:studiogenesis/screens/Home.dart';
-import 'package:studiogenesis/screens/LogIn.dart';
-import 'package:studiogenesis/screens/List.dart';
-import 'package:studiogenesis/screens/New.dart';
-import 'package:studiogenesis/screens/Settings.dart';
+import 'package:studiogenesis/screens/ExportScreens.dart';
 
 void main() => runApp(MaterialApp(
   initialRoute: '/',
@@ -14,8 +9,7 @@ void main() => runApp(MaterialApp(
     'newPressed' : (context) => const New(),
     'settingsPressed' : (context) => const Settings(),
     'backToLogIn' : (context) => const LogIn(),
-
-
+    'backToHome' : (context) => const Home(),
   },
 )
 );
