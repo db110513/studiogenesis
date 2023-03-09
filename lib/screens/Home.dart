@@ -24,7 +24,7 @@ class Home extends StatelessWidget {
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15)))
             ),
             onPressed: () {
-
+              Navigator.pushNamed(context, 'listPressed');
             },
             icon: const Icon(Icons.list),
             label: const Text('LIST', style: TextStyle(fontSize: 30)),
@@ -36,7 +36,7 @@ class Home extends StatelessWidget {
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15)))
             ),
             onPressed: () {
-
+              Navigator.pushNamed(context, 'newPressed');
             },
             icon: const Icon(Icons.add),
             label: const Text('NEW', style: TextStyle(fontSize: 30)),
@@ -48,7 +48,7 @@ class Home extends StatelessWidget {
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15)))
             ),
             onPressed: () {
-
+              Navigator.pushNamed(context, 'settingsPressed');
             },
             icon: const Icon(Icons.settings),
             label: const Text('SETTINGS', style: TextStyle(fontSize: 30)),
