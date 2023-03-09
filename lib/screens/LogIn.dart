@@ -29,37 +29,31 @@ class _LogInState extends State<LogIn> {
               Image.asset('img/logo.png'),
             ],
           ),
-          const SizedBox(height: 30),
+          const SizedBox(height: 40),
           Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.fromLTRB(15, 0, 20, 0),
             child: TextField(
-              controller: userName,
-              keyboardType: TextInputType.emailAddress,
-              decoration: InputDecoration(
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide: BorderSide(width: 10)
-                ),
-                label: Text('Mail'),
-                hintText: 'Introduce tu mail',
-                icon: Icon(Icons.person),
+              style: TextStyle(fontSize: 25),
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(borderSide: BorderSide(width: 5)),
+                icon: const Icon(Icons.mail),
+                hintText: 'Inserta la fecha del evento',
+                hintStyle: TextStyle(fontSize: 20),
+                labelText: 'Email',
               ),
             ),
           ),
+          const SizedBox(height: 20),
           Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.fromLTRB(15, 0, 20, 0),
             child: TextField(
-              controller: userName,
-              keyboardType: TextInputType.text,
-              obscureText: true,
-              decoration: InputDecoration(
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(20),
-                    borderSide: BorderSide(width: 10)
-                ),
-                label: Text('Password'),
-                hintText: 'Introduce tu password',
-                icon: Icon(Icons.password),
+              style: TextStyle(fontSize: 25),
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(borderSide: BorderSide(width: 5)),
+                icon: const Icon(Icons.password),
+                hintText: 'Inserta la contraseña',
+                hintStyle: TextStyle(fontSize: 20),
+                labelText: 'Contraseña',
               ),
             ),
           ),

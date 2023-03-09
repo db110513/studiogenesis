@@ -7,6 +7,11 @@ class Crear extends StatefulWidget {
 }
 
 class _CrearState extends State<Crear> {
+  final nombre = TextEditingController();
+  final descripcion = TextEditingController();
+  final fechaEvento = TextEditingController();
+  final foto = TextEditingController();
+  final precio = TextEditingController();
 
   Widget build(BuildContext context) => MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -25,12 +30,12 @@ class _CrearState extends State<Crear> {
 
         child: Column(
           children: [
-
             const SizedBox(height: 20),
-
             Padding(
-              padding: const EdgeInsets.fromLTRB(0, 0, 8, 0),
+              padding: const EdgeInsets.fromLTRB(0, 0, 12, 0),
               child: TextField(
+                controller: nombre,
+                style: TextStyle(fontSize: 25),
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(borderSide: BorderSide(width: 5)),
                   icon: const Icon(Icons.person),
@@ -40,10 +45,12 @@ class _CrearState extends State<Crear> {
                 ),
               ),
             ),
-            const SizedBox(height: 15),
+            const SizedBox(height: 25),
             Padding(
-              padding: const EdgeInsets.fromLTRB(0, 0, 8, 0),
+              padding: const EdgeInsets.fromLTRB(0, 0, 12, 0),
               child: TextField(
+                controller: descripcion,
+                style: TextStyle(fontSize: 25),
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(borderSide: BorderSide(width: 5)),
                   icon: const Icon(Icons.description_outlined),
@@ -53,10 +60,12 @@ class _CrearState extends State<Crear> {
                 ),
               ),
             ),
-            const SizedBox(height: 15),
+            const SizedBox(height: 25),
             Padding(
-              padding: const EdgeInsets.fromLTRB(0, 0, 8, 0),
+              padding: const EdgeInsets.fromLTRB(0, 0, 12, 0),
               child: TextField(
+                style: TextStyle(fontSize: 25),
+                controller: fechaEvento,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(borderSide: BorderSide(width: 5)),
                   icon: const Icon(Icons.calendar_month),
@@ -66,13 +75,14 @@ class _CrearState extends State<Crear> {
                 ),
               ),
             ),
-            const SizedBox(height: 15),
+            const SizedBox(height: 25),
             Padding(
-              padding: const EdgeInsets.fromLTRB(0, 0, 8, 0),
+              padding: const EdgeInsets.fromLTRB(0, 0, 12, 0),
               child: TextField(
+                controller: foto,
+                style: TextStyle(fontSize: 25),
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(borderSide: BorderSide(width: 5)),
-
                   icon: const Icon(Icons.camera_alt),
                   hintText: 'Inserta tu foto',
                   hintStyle: TextStyle(fontSize: 20),
@@ -80,10 +90,12 @@ class _CrearState extends State<Crear> {
                 ),
               ),
             ),
-            const SizedBox(height: 15),
+            const SizedBox(height: 25),
             Padding(
-              padding: const EdgeInsets.fromLTRB(0, 0, 8, 0),
+              padding: const EdgeInsets.fromLTRB(0, 0, 12, 0),
               child: TextField(
+                controller: precio,
+                style: TextStyle(fontSize: 25),
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(borderSide: BorderSide(width: 5)),
                   icon: const Icon(Icons.euro),
@@ -93,7 +105,7 @@ class _CrearState extends State<Crear> {
                 ),
               ),
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 40),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -115,6 +127,9 @@ class _CrearState extends State<Crear> {
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15)))
                   ),
                   onPressed: () {
+
+                    Text(nombre.text);
+
                   },
                   icon: const Icon(Icons.add),
                   label: const Text('CREAR', style: TextStyle(fontSize: 30)),
