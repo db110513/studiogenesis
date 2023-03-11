@@ -8,8 +8,7 @@ class LogIn extends StatefulWidget {
 
 class _LogInState extends State<LogIn> {
 
-  TextEditingController userName = TextEditingController();
-  TextEditingController password = TextEditingController();
+  TextEditingController mail = TextEditingController();
 
 
   Widget build(BuildContext context) => MaterialApp(
@@ -33,6 +32,7 @@ class _LogInState extends State<LogIn> {
           Padding(
             padding: const EdgeInsets.fromLTRB(15, 0, 20, 0),
             child: TextField(
+              controller: mail,
               style: TextStyle(fontSize: 25),
               decoration: const InputDecoration(
                 border: OutlineInputBorder(borderSide: BorderSide(width: 5)),

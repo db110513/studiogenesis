@@ -74,22 +74,6 @@ class Home extends StatelessWidget {
               label: const Text('AJUSTES', style: TextStyle(fontSize: 30)),
             ),
           ),
-          const SizedBox(height: 20),
-          SizedBox(
-            width: 200,
-            child: ElevatedButton.icon(
-              style: ElevatedButton.styleFrom(
-                  padding: EdgeInsets.all(15),
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15)))
-              ),
-              onPressed: () {
-                Navigator.pushNamed(context, 'backToLogIn');
-              },
-              icon: const Icon(Icons.arrow_back),
-              label: const Text('BACK', style: TextStyle(fontSize: 30)),
-            ),
-          ),
-
         ],
       ),
     ),
