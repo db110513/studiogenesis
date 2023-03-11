@@ -8,7 +8,7 @@ class LogIn extends StatefulWidget {
 
 class _LogInState extends State<LogIn> {
 
-  TextEditingController mail = TextEditingController();
+  final mail = TextEditingController();
 
 
   Widget build(BuildContext context) => MaterialApp(
