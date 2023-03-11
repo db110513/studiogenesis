@@ -34,10 +34,10 @@ class _LogInState extends State<LogIn> {
             child: TextField(
               controller: mail,
               style: TextStyle(fontSize: 25),
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(borderSide: BorderSide(width: 5)),
+              decoration: InputDecoration(
+                border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
                 icon: const Icon(Icons.mail),
-                hintText: 'Inserta la fecha del evento',
+                hintText: 'Inserta tu email',
                 hintStyle: TextStyle(fontSize: 20),
                 labelText: 'Email',
               ),
@@ -48,10 +48,10 @@ class _LogInState extends State<LogIn> {
             padding: const EdgeInsets.fromLTRB(15, 0, 20, 0),
             child: TextField(
               style: TextStyle(fontSize: 25),
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(borderSide: BorderSide(width: 5)),
+              decoration: InputDecoration(
+                border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
                 icon: const Icon(Icons.password),
-                hintText: 'Inserta la contraseña',
+                hintText: 'Inserta tu contraseña',
                 hintStyle: TextStyle(fontSize: 20),
                 labelText: 'Contraseña',
               ),

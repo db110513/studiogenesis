@@ -36,8 +36,8 @@ class _CrearState extends State<Crear> {
               child: TextField(
                 controller: nombre,
                 style: TextStyle(fontSize: 25),
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(borderSide: BorderSide(width: 5)),
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
                   icon: const Icon(Icons.person),
                   hintText: 'Inserta tu nombre',
                   hintStyle: TextStyle(fontSize: 20),
@@ -51,8 +51,8 @@ class _CrearState extends State<Crear> {
               child: TextField(
                 controller: descripcion,
                 style: TextStyle(fontSize: 25),
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(borderSide: BorderSide(width: 5)),
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
                   icon: const Icon(Icons.description_outlined),
                   hintText: 'Inserta tu descripción',
                   hintStyle: TextStyle(fontSize: 20),
@@ -66,8 +66,8 @@ class _CrearState extends State<Crear> {
               child: TextField(
                 style: TextStyle(fontSize: 25),
                 controller: fechaEvento,
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(borderSide: BorderSide(width: 5)),
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
                   icon: const Icon(Icons.calendar_month),
                   hintText: 'Inserta la fecha del evento',
                   hintStyle: TextStyle(fontSize: 20),
@@ -81,8 +81,8 @@ class _CrearState extends State<Crear> {
               child: TextField(
                 controller: foto,
                 style: TextStyle(fontSize: 25),
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(borderSide: BorderSide(width: 5)),
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
                   icon: const Icon(Icons.camera_alt),
                   hintText: 'Inserta tu foto',
                   hintStyle: TextStyle(fontSize: 20),
@@ -96,8 +96,8 @@ class _CrearState extends State<Crear> {
               child: TextField(
                 controller: precio,
                 style: TextStyle(fontSize: 25),
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(borderSide: BorderSide(width: 5)),
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
                   icon: const Icon(Icons.euro),
                   hintText: 'Inserta el precio',
                   hintStyle: TextStyle(fontSize: 20),
