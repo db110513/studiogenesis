@@ -64,7 +64,7 @@ class _LogInState extends State<LogIn> {
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15)))
             ),
             onPressed: () {
-              Navigator.pushNamed(context, 'loginPressed');
+              Navigator.pushNamed(context, '/home');
             },
             child: const Text('LOG IN', style: TextStyle(fontSize: 30)),
           ),
