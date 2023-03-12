@@ -22,7 +22,6 @@ class App extends StatelessWidget {
           '/home/listado': (context) => const Listado(),
           '/home/crear': (context) => const Crear(),
           '/home/ajustes': (context) => const Ajustes(),
-          'backToLogIn': (context) => const LogIn(),
           'backToHome': (context) => const Home(),
         }
     );

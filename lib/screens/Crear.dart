@@ -115,7 +115,7 @@ class _CrearState extends State<Crear> {
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15)))
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, 'backToHome');
+                    Navigator.pushNamed(context, '/');
                   },
                   icon: const Icon(Icons.arrow_back),
                   label: const Text('BACK', style: TextStyle(fontSize: 30)),

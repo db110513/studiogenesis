@@ -10,7 +10,6 @@ class _LogInState extends State<LogIn> {
 
   final mail = TextEditingController();
 
-
   Widget build(BuildContext context) => MaterialApp(
     debugShowCheckedModeBanner: false,
 
